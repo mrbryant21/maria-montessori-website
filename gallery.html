@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-1GW61ZJ65B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-1GW61ZJ65B');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Maria Montessori School</title>
+
+    <!-- favicon -->
+     <link rel="icon" type="image/png" href="img/schoollogo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2b87a6a6b8.js" crossorigin="anonymous"></script>
+
+<!-- Lightbox CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+
+<!-- Lightbox JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+
+         body{
+            font-family: 'Poppins', sans-serif;
+         }
+        /* Custom styles */
+        .accordion-button {
+            font-weight: bold;
+            color: #5f0a0e;
+            background-color: transparent;
+            border: none;
+        }
+
+        .container{
+            border: none;
+        }
+
+        .accordion-button:not(.collapsed) {
+            color: #5f0a0e;
+            background-color: #f8f9fa;
+        }
+
+        .accordion-item {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .accordion-header {
+            padding: 0;
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 150px; /* Set a fixed height for the images */
+            object-fit: cover; /* Maintain aspect ratio, cropping if necessary */
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .gallery-row {
+            row-gap: 15px; /* Space between rows */
+        }
+        .accordion-body{
+            transition: 2s ease-in;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Topbar Start -->
+<div class="container-fluid bg-primary text-light py-2 px-lg-5">
+    <div class="row d-flex justify-content-between align-items-center">
+        <div class="col-lg-6 d-flex align-items-center">
+            <small class="d-none d-lg-inline-flex align-items-center">
+                <i class="fa fa-map-marker-alt mr-2"></i> Odeneho Kwadaso, Kumasi, Ghana
+            </small>
+            <small class="ml-3 d-flex align-items-center">
+                <a href="tel:+233277889923" class="text-light d-flex align-items-center">
+                    <i class="fa fa-phone-alt mr-2"></i> <span class="d-none d-lg-inline">0277889923</span>
+                </a>
+            </small>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-end align-items-center">
+            <a href="" class="text-light px-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="" class="text-light px-2"><i class="fab fa-twitter"></i></a>
+            <a href="" class="text-light px-2"><i class="fab fa-linkedin-in"></i></a>
+            <a href="" class="text-light px-2"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->
+
+<!-- Media Query to hide text on mobile view -->
+<style>
+    @media (max-width: 768px) {
+        .d-lg-inline {
+            display: none !important;
+        }
+    }
+</style>
+
+<style>
+/* Dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; /* Optional: adjusts the menu position if needed */
+}
+
+/* Optional: remove animation delay */
+.dropdown-menu {
+    transition: all 0.3s ease-in-out;
+}
+
+</style>
+
+<!-- Navbar Start -->
+<div class="container-fluid bg-light shadow">
+    <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
+        <!-- Logo Section -->
+        <a href="index.html" class="navbar-brand d-flex align-items-center font-weight-bold text-secondary" style="font-size: 30px;">
+            <img src="img/schoollogo.png" alt="School Logo" class="img-fluid" style="height: 50px; width: auto; margin-right: 10px;">
+            <span style="font-size: 25px;">Maria Montessori</span>
+        </a>
+        
+        <!-- Mobile Toggle Button -->
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu Links -->
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav font-weight-bold mx-auto py-0">
+                <a href="index.html" class="nav-item nav-link">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                
+                <!-- Dropdown for Academics -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Academics</a>
+                    <div class="dropdown-menu rounded-0 m-0">
+                        <a href="preschool.html" class="dropdown-item">Preschool</a>
+                        <a href="primary.html" class="dropdown-item">Primary</a>
+                        <a href="jhs.html" class="dropdown-item">Junior High School</a>
+                    </div>
+                </div>
+                
+                <!-- Admissions Link -->
+                <a href="admission.html" class="nav-item nav-link">Admissions</a>
+                
+                <!-- Dropdown for Campus Life -->
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle active" data-toggle="dropdown">Campus Life</a>
+                    <div class="dropdown-menu rounded-0 m-0">
+                        <a href="gallery.html" class="dropdown-item">Gallery</a>
+                        <a href="gallery.html#headingTwo" class="dropdown-item">Teaching and Learning</a>
+                    </div>
+                </div>
+
+                <!-- Contact Link -->
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+            
+            <!-- Join Class Button -->
+            <a href="" class="btn btn-primary px-4">Join Class</a>
+        </div>
+    </nav>
+</div>
+<!-- Navbar End -->
+
+
+<div class="container py-5">
+    <h1 class="mb-4 text-center">Maria Montessori in Pictures</h1>
+
+    <div class="accordion" id="galleryAccordion">
+
+        <!-- Library Time Section -->
+        <!-- <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Library Time
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#galleryAccordion">
+                <div class="accordion-body">
+                    <div class="row gallery-row">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/IMG_3395.JPG" data-lightbox="library-time" data-title="Library Time 1">
+                                <img src="img/IMG_3395.JPG" alt="Library Time 1" class="img-fluid gallery-image">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/IMG_3449_1.JPG" data-lightbox="library-time" data-title="Library Time 2">
+                                <img src="img/IMG_3449_1.JPG" alt="Library Time 2" class="img-fluid gallery-image">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/IMG_3745.JPG" data-lightbox="library-time" data-title="Library Time 3">
+                                <img src="img/IMG_3745.JPG" alt="Library Time 3" class="img-fluid gallery-image">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/IMG_3395.JPG" data-lightbox="library-time" data-title="Library Time 4">
+                                <img src="img/IMG_3395.JPG" alt="Library Time 4" class="img-fluid gallery-image">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    
+        <!-- Teaching and Learning Section -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo" id="teachingandlearning">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Teaching and Learning
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#galleryAccordion">
+                <div class="accordion-body">
+                    <div class="row gallery-row">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/madam1.jpg" data-lightbox="teaching-learning" data-title="Teaching and Learning 1">
+                                <img src="img/madam1.jpg" alt="Teaching and Learning 1" class="img-fluid gallery-image">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/classroom1.jpg" data-lightbox="teaching-learning" data-title="Teaching and Learning 2">
+                                <img src="img/classroom1.jpg" alt="Teaching and Learning 2" class="img-fluid gallery-image">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/madam2.jpg" data-lightbox="teaching-learning" data-title="Teaching and Learning 3">
+                                <img src="img/madam2.jpg" alt="Teaching and Learning 3" class="img-fluid gallery-image">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/KG1.jpg" data-lightbox="teaching-learning" data-title="Teaching and Learning 4">
+                                <img src="img/KG1.jpg" alt="Teaching and Learning 4" class="img-fluid gallery-image">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/preschool1.jpg" data-lightbox="teaching-learning" data-title="Teaching and Learning 5">
+                                <img src="img/preschool1.jpg" alt="Teaching and Learning 5" class="img-fluid gallery-image">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/extra2.jpg" data-lightbox="teaching-learning" data-title="Teaching and Learning 6">
+                                <img src="img/extra2.jpg" alt="Teaching and Learning 6" class="img-fluid gallery-image">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/extra3.jpg" data-lightbox="teaching-learning" data-title="Teaching and Learning 7">
+                                <img src="img/extra3.jpg" alt="Teaching and Learning 7" class="img-fluid gallery-image">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/classroom4.jpg" data-lightbox="teaching-learning" data-title="Teaching and Learning 8">
+                                <img src="img/classroom4.jpg" alt="Teaching and Learning 8" class="img-fluid gallery-image">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/classroom5.jpg" data-lightbox="teaching-learning" data-title="Teaching and Learning 9">
+                                <img src="img/classroom5.jpg" alt="Teaching and Learning 9" class="img-fluid gallery-image">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/madam4.jpg" data-lightbox="teaching-learning" data-title="Teaching and Learning 10">
+                                <img src="img/madam4.jpg" alt="Teaching and Learning 10" class="img-fluid gallery-image">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/madam3.jpg" data-lightbox="teaching-learning" data-title="Teaching and Learning 11">
+                                <img src="img/madam3.jpg" alt="Teaching and Learning 11" class="img-fluid gallery-image">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Students Life Section  -->
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Student Life
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#galleryAccordion">
+                <div class="accordion-body">
+                    <div class="row gallery-row">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/JHS1.jpg" data-lightbox="Students Life" data-title="Students Life 1">
+                                <img src="img/JHS1.jpg" alt="Students Life 1" class="img-fluid gallery-image">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/JHS2.jpg" data-lightbox="Students Life" data-title="Students Life 2">
+                                <img src="img/JHS2.jpg" alt="Students Life 2" class="img-fluid gallery-image">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/upperprimary1.jpg" data-lightbox="Students Life" data-title="Students Life 3">
+                                <img src="img/upperprimary1.jpg" alt="Students Life 3" class="img-fluid gallery-image">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/KG Kids1.jpg" data-lightbox="Students Life" data-title="Students Life 4">
+                                <img src="img/KG Kids1.jpg" alt="Students Life 4" class="img-fluid gallery-image">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/kids1.jpg" data-lightbox="Students Life" data-title="Students Life 5">
+                                <img src="img/kids1.jpg" alt="Students Life 5" class="img-fluid gallery-image">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/primary kids1.jpg" data-lightbox="Students Life" data-title="Students Life 6">
+                                <img src="img/primary kids1.jpg" alt="Students Life 3" class="img-fluid gallery-image">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/upperprimary2.jpg" data-lightbox="Students Life" data-title="Students Life 7">
+                                <img src="img/upperprimary2.jpg" alt="Students Life 7" class="img-fluid gallery-image">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/kids2.jpg" data-lightbox="Students Life" data-title="Students Life 8">
+                                <img src="img/kids2.jpg" alt="Students Life 8" class="img-fluid gallery-image">
+                            </a>
+                        </div> 
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/kids3.jpg" data-lightbox="Students Life" data-title="Students Life 9">
+                                <img src="img/kids3.jpg" alt="Students Life 9" class="img-fluid gallery-image">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/kids4.jpg" data-lightbox="Students Life" data-title="Students Life 10">
+                                <img src="img/kids4.jpg" alt="Students Life 10" class="img-fluid gallery-image">
+                            </a>
+                        </div>   
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/extra-curri-1.jpeg" data-lightbox="Students Life" data-title="Students Life 10">
+                                <img src="img/extra-curri-1.jpeg" alt="Students Life 10" class="img-fluid gallery-image">
+                            </a>
+                        </div>   
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/extra-curri-2.jpeg" data-lightbox="Students Life" data-title="Students Life 10">
+                                <img src="img/extra-curri-2.jpeg" alt="Students Life 10" class="img-fluid gallery-image">
+                            </a>
+                        </div>   
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/extra-curri-3.jpeg" data-lightbox="Students Life" data-title="Students Life 10">
+                                <img src="img/extra-curri-3.jpeg" alt="Students Life 10" class="img-fluid gallery-image">
+                            </a>
+                        </div>   
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/extra-curri-4.jpeg" data-lightbox="Students Life" data-title="Students Life 10">
+                                <img src="img/extra-curri-4.jpeg" alt="Students Life 10" class="img-fluid gallery-image">
+                            </a>
+                        </div>   
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/extra-curri-5.jpeg" data-lightbox="Students Life" data-title="Students Life 10">
+                                <img src="img/extra-curri-5.jpeg" alt="Students Life 10" class="img-fluid gallery-image">
+                            </a>
+                        </div>   
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/extra-curri-6.jpeg" data-lightbox="Students Life" data-title="Students Life 10">
+                                <img src="img/extra-curri-6.jpeg" alt="Students Life 10" class="img-fluid gallery-image">
+                            </a>
+                        </div>   
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/extra-curri-7.jpeg" data-lightbox="Students Life" data-title="Students Life 10">
+                                <img src="img/extra-curri-7.jpeg" alt="Students Life 10" class="img-fluid gallery-image">
+                            </a>
+                        </div>   
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/extra-curri-8.jpeg" data-lightbox="Students Life" data-title="Students Life 10">
+                                <img src="img/extra-curri-8.jpeg" alt="Students Life 10" class="img-fluid gallery-image">
+                            </a>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div> 
+    
+        <!-- Club Activities Section
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Club Activities
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#galleryAccordion">
+                <div class="accordion-body">
+                    <div class="row gallery-row">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/IMG_3395.JPG" data-lightbox="club-activities" data-title="Club Activities 1">
+                                <img src="img/IMG_3395.JPG" alt="Club Activities 1" class="img-fluid gallery-image">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/IMG_3449_1.JPG" data-lightbox="club-activities" data-title="Club Activities 2">
+                                <img src="img/IMG_3449_1.JPG" alt="Club Activities 2" class="img-fluid gallery-image">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/IMG_3745.JPG" data-lightbox="club-activities" data-title="Club Activities 3">
+                                <img src="img/IMG_3745.JPG" alt="Club Activities 3" class="img-fluid gallery-image">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/IMG_3395.JPG" data-lightbox="club-activities" data-title="Club Activities 4">
+                                <img src="img/IMG_3395.JPG" alt="Club Activities 4" class="img-fluid gallery-image">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    
+        <!-- Elections Section
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Elections
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#galleryAccordion">
+                <div class="accordion-body">
+                    <div class="row gallery-row">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/IMG_3395.JPG" data-lightbox="elections" data-title="Elections 1">
+                                <img src="img/IMG_3395.JPG" alt="Elections 1" class="img-fluid gallery-image">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/IMG_3449_1.JPG" data-lightbox="elections" data-title="Elections 2">
+                                <img src="img/IMG_3449_1.JPG" alt="Elections 2" class="img-fluid gallery-image">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/IMG_3745.JPG" data-lightbox="elections" data-title="Elections 3">
+                                <img src="img/IMG_3745.JPG" alt="Elections 3" class="img-fluid gallery-image">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <a href="img/IMG_3395.JPG" data-lightbox="elections" data-title="Elections 4">
+                                <img src="img/IMG_3395.JPG" alt="Elections 4" class="img-fluid gallery-image">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    
+    </div>
+    
+    <!-- Include Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script>
+      lightbox.option({
+        'resizeDuration': 200,
+        'wrapAround': true, // Allow wrapping around images
+        'alwaysShowNavOnTouchDevices': true, // Show navigation on touch devices
+        'albumLabel': "Image %1 of %2", // Custom album label format
+        'fadeDuration': 300,
+        'imageFadeDuration': 300,
+      });
+    </script>
+    
+</div>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="" class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0" style="font-size: 40px; line-height: 40px;">
+                    <span class="text-white" style="font-size: 25px;">Maria Montessori</span>
+                </a>
+                <p>With over 35 years of experience, we offer a balanced co-educational environment, focusing on individual potential and personal growth.</p>
+                <div class="d-flex justify-content-start mt-4">
+                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                        style="width: 38px; height: 38px;" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                        style="width: 38px; height: 38px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                        style="width: 38px; height: 38px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                        style="width: 38px; height: 38px;" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h3 class="text-primary mb-4">Get In Touch</h3>
+                <div class="d-flex">
+                    <h4 class="fa fa-map-marker-alt text-primary"></h4>
+                    <div class="pl-3">
+                        <h5 class="text-white">Address</h5>
+                        <p> Odeneho Kwadaso Road
+                            Odeneho Kwadaso
+                            Kumasi
+                            AK176-8395
+                            P.O.BOX: SN372
+                            </p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <h4 class="fa fa-envelope text-primary"></h4>
+                    <div class="pl-3">
+                        <h5 class="text-white">Email</h5>
+                        <p>info@mmskumasi.com</p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <h4 class="fa fa-phone-alt text-primary"></h4>
+                    <div class="pl-3">
+                        <h5 class="text-white">Phone</h5>
+                        <p>0277889923 / 0578864653</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h3 class="text-primary mb-4">Quick Links</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                    <a class="text-white mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                    <a class="text-white mb-2" href="academics.html"><i class="fa fa-angle-right mr-2"></i>Academics</a>
+                    <a class="text-white mb-2" href="gallery.html"><i class="fa fa-angle-right mr-2"></i>Gallery</a>
+                    <a class="text-white mb-2" href="blog.html"><i class="fa fa-angle-right mr-2"></i>Our Blog</a>
+                    <a class="text-white" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h3 class="text-primary mb-4">Newsletter</h3>
+                <form action="">
+                    <div class="form-group">
+                        <input type="text" class="form-control border-0 py-4" placeholder="Your Name" required="required" />
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control border-0 py-4" placeholder="Your Email"
+                            required="required" />
+                    </div>
+                    <div>
+                        <button class="btn btn-primary btn-block border-0 py-3" type="submit">Submit Now</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="container-fluid pt-5" style="border-top: 1px solid rgba(23, 162, 184, .2);;">
+            <p class="m-0 text-center text-white">
+                &copy; <a class="font-weight-bold" href="#"></a>Maria Montessori All Rights Reserved. 
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Lightbox JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="lib/isotope/isotope.pkgd.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+
+<!-- Contact Javascript File -->
+<script src="mail/jqBootstrapValidation.min.js"></script>
+<script src="mail/contact.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+</body>
+</html>
